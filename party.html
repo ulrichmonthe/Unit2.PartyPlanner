@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Planner</title>
+    <script src="party.js"></script>
+</head>
+<body>
+    <div>
+        <form id="party-form">
+            <label for="name">Party Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            
+            <button type="submit">Add Party</button>
+          </form>
+          
+          <!-- This container will hold the dynamically created party list -->
+          <div id="party-list"></div>
+    </div>
+</body>
+</html>
